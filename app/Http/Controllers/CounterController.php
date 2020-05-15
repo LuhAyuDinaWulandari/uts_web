@@ -24,7 +24,7 @@ class CounterController extends Controller
     public function index()
     {
         $title='Counter';
-        $counter=Counter::paginate(5);
+        $counter=Counter::paginate(4);
        // dd($counter);
         return view('admin.counter',compact('title','counter'));//
     }
